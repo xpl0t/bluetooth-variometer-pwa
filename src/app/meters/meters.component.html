@@ -1,0 +1,50 @@
+<div class="row gx-5 h-50">
+  <div class="col-sm border d-flex flex-column justify-content-center">
+
+    <div>
+      <h1 class="text-center">{{ altitude$ | async | number:'1.1-1' }} m</h1>
+      <h5 class="text-center text-muted">Altitude</h5>
+    </div>
+  
+  </div>
+
+  <div class="col-sm border d-flex flex-column justify-content-center">
+
+    <div>
+      <h1 class="text-center">{{ preassure$ | async | number:'1.2-2' }} hPa</h1>
+      <h5 class="text-center text-muted">Preassure</h5>
+    </div>
+  
+  </div>
+</div>
+
+<div class="row h-50">
+  <div class="col-sm border d-flex flex-column justify-content-center">
+
+    <div>
+      <h1 class="text-center">{{ vario$ | async | number:'1.2-2' }} m/s</h1>
+      <h5 class="text-center text-muted">Vario</h5>
+    </div>
+  
+  </div>
+
+  <div class="col-sm border d-flex flex-column justify-content-center">
+
+    <div>
+      <h1 class="text-center">{{ temperature$ | async }} C</h1>
+      <h5 class="text-center text-muted">Temperature</h5>
+    </div>
+  
+  </div>
+
+  <div class="col-sm border d-flex flex-column justify-content-center">
+
+    <div>
+      <h1 class="text-center">{{ batteryStatus$ | async }} %</h1>
+      <h5 class="text-center text-muted">Battery percentage</h5>
+    </div>
+  
+  </div>
+</div>
+
+<!-- <h1></h1> -->
